@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Notes Generator</h2>
+    </div>
+    
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Generating candidates...</p>
+    </div>
+    
+    <div id="error" class="error hidden">
+      <p id="error-message">Error occurred</p>
+    </div>
+    
+    <div id="candidates" class="candidates hidden">
+      <!-- Candidates will appear here -->
+    </div>
+    
+    <div id="generate-section" class="generate-section">
+      <button id="generate-btn" class="generate-btn">
+        Generate 10 Candidates
+      </button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

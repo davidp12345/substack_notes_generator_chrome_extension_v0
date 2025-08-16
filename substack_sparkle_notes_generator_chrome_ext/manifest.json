@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Substack Notes Generator",
+  "version": "1.0",
+  "description": "Generate notes from Substack posts",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Generate Notes"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.substack.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "*://*.substack.com/*",
+    "https://*/*",
+    "http://*/*"
+  ]
+}
